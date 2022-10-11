@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <!--스타일 시트-->
+        <link rel="stylesheet" href="./styles/index.css">
+        <!--자바스크립트-->
+        <!--위치1 <script> // alert("Hello world!"); // console.log("Hello world");
+        </script> -->
+        <script rel="javascript" src="./Script/exam.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&display=swap">
+        <title>JS PWA</title>
+    </head>
+    <body>
+        <div id="root">
+            <header>
+                <h1>주사위 게임</h1>
+            </header>
+            <!-- 여기도 가능 <script> alert("Hello world!"); console.log("Hello world");
+            </script> -->
+            <main id="content">
+                <span id="ment">
+                    <h2></h2>
+                </span>
+                <section id="radioSection">
+                    <fieldset>
+                        <legend>숫자를 선택하세요</legend>
+                    <label class="num_radio">
+                        <input type="radio" name="num" value="1" class="diceRadio">
+                        <span>1</span>
+                    </label>
+                    <label class="num_radio">
+                        <input type="radio" name="num" value="2" class="diceRadio">
+                        <span>2</span>
+                    </label>
+                    <label class="num_radio">
+                        <input type="radio" name="num" value="3" class="diceRadio">
+                        <span>3</span>
+                    </label>
+                    <label class="num_radio">
+                        <input type="radio" name="num" value="4" class="diceRadio">
+                        <span>4</span>
+                    </label>
+                    <label class="num_radio">
+                        <input type="radio" name="num" value="5" class="diceRadio">
+                        <span>5</span>
+                    </label>
+                    <label class="num_radio">
+                        <input type="radio" name="num" value="6" class="diceRadio">
+                        <span>6</span>
+                    </label>
+                </fieldset>
+                </section>
+                <section id="diceSection"></section>
+                <section id="bt">
+                    <button id="btn1" onclick="show();">주사위</button>
+                    <button id="btn2" onclick="restart();">다시하기</button>
+                </section>
+            </main>
+        </div>
+        <!-- 여기도 가능 <script> alert("Hello world!"); console.log("Hello world");
+        console.log(document.getElementById("bt")) </script> -->
+    </body>
+</html>
